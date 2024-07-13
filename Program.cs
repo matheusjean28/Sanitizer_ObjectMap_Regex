@@ -53,8 +53,8 @@ class Program
         foreach (var person in testObjects)
         {
             Console.WriteLine("----- Testing new object -----");
-            mapper.IterateProperties(person);
-            Console.WriteLine();
+            mapper.IterateProperties(person, true);
+            Console.WriteLine(testObjects);
         }
     }
 }
